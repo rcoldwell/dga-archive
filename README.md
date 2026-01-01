@@ -1,6 +1,6 @@
-# Foundation S
+# Archive S
 
-This is an Omeka S theme based on ZURB Foundation Sites. It currently comes with a default stylesheet for prototyping as well as 3 other style options. 
+This is an Omeka S theme derived from the Foundation S theme, based on ZURB Foundation Sites. It currently comes with a default stylesheet for prototyping as well as 3 other style options. 
 
 ## Installation
 
