@@ -1,17 +1,17 @@
 {
-  "name": "foundation-s-theme",
-  "version": "1.5.3",
-  "description": "Omeka S theme using the ZURB Foundation toolkit.",
+  "name": "archive-s-theme",
+  "version": "1.0.0",
+  "description": "Archive based on Omeka S theme using the ZURB Foundation toolkit.",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
     "build": "gulp css"
   },
-  "author": "Omeka Team <outreach@omeka.org>",
+  "author": "Robert Coldwell <robert@icoldwell.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/omeka-s-themes/foundation-s/issues",
-    "email": "outreach@omeka.org"
+    "url": "https://github.com/rcoldwell/archive",
+    "email": "robert@icoldwell.com"
   },
   "dependencies": {
     "foundation-sites": "^6.8.1",
