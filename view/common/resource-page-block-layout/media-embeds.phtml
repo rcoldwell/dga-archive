@@ -1,0 +1,14 @@
+<?php
+$resourceMedia = $resource->media();
+$decoration = $this->themeSetting('image_decoration');
+?>
+<?php if ($resourceMedia): ?>
+    <div
+        class="media-embeds menu <?php echo is_array($decoration) && in_array('media', $decoration) ? 'decoration' : ''; ?> grid-x grid-margin-x">
+        <?php foreach ($resourceMedia as $media): ?>
+            <div class="cell small-6 medium-6">
+                <?php echo $media->render(); ?>
+            </div>
+        <?php endforeach; ?>
+    </div>
+<?php endif; ?>

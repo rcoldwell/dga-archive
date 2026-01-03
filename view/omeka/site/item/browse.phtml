@@ -130,13 +130,19 @@ $sortHeadings = [
                     );
                     echo $item->linkRaw($linkContent, null, ['class' => 'resource-link']);
                     ?>
-                    <?php if ($body): ?>
+                    <?php if (false && $body): ?>
                         <div class="description <?php echo ($bodyTruncate) ? $bodyTruncate : ''; ?>">
-                            <?php echo $escape($body); ?></div>
+                            <?php echo $escape($body); ?>
+                        </div>
                     <?php endif; ?>
                     <?php if ($creator): ?>
                         <div class="creator"><?php echo $escape($creator); ?></div>
                     <?php endif; ?>
+                    <?php foreach ($item->itemSets() as $itemSet): ?>
+                        <div class="item-set"><?php echo $translate('Item set'); ?>:
+                            <?php echo $escape($itemSet->displayTitle()); ?>
+                        </div>
+                    <?php endforeach; ?>
                 </div>
             </li>
         <?php endforeach; ?>
